@@ -17,6 +17,7 @@ int main(){
     for(int i = 0; i < 5; ++i)
         myArr[i] = (i + 1) * 10;
     int* p = myArr;
+
     cout << "p is: " << p << ", myArr is: " << myArr <<
         ", and &myArr[0]" << &myArr[0] << endl;
 
