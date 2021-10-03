@@ -9,11 +9,11 @@ public class AreaCalculation {
     
     //这里是主方法
     public static void main(String[] args) {
-        /*System.out.print("请输入圆的半径: ");
+        System.out.print("请输入圆的半径: ");
         Scanner input = new Scanner(System.in);
         double radius = input.nextDouble();
         double area = Math.PI * Math.pow(radius, 2);
-        System.out.println("Area is: " + area);*/
+        System.out.println("Area is: " + area);
         
         /*int num = 5;
         //num ++;
