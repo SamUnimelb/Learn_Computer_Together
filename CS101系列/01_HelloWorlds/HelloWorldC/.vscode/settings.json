@@ -1,4 +1,7 @@
 {
+  "C_Cpp_Runner.cCompilerPath": "C:/Dev_Tools/MinGW/bin/gcc.exe",
+  "C_Cpp_Runner.cppCompilerPath": "C:/Dev_Tools/MinGW/bin/g++.exe",
+  "C_Cpp_Runner.debuggerPath": "C:/Dev_Tools/MinGW/bin/gdb.exe",
   "C_Cpp_Runner.warnings": [
     "-Wall",
     "-Wextra",
@@ -11,8 +14,5 @@
   "C_Cpp_Runner.cppStandard": "",
   "C_Cpp_Runner.excludeSearch": [],
   "C_Cpp_Runner.enableWarnings": true,
-  "C_Cpp_Runner.warningsAsError": false,
-  "C_Cpp_Runner.cCompilerPath": "C:/msys64/mingw64/bin/gcc.exe",
-  "C_Cpp_Runner.cppCompilerPath": "C:/msys64/mingw64/bin/g++.exe",
-  "C_Cpp_Runner.debuggerPath": "gdb"
+  "C_Cpp_Runner.warningsAsError": false
 }
