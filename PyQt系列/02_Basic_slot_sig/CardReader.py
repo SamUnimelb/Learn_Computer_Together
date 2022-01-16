@@ -34,7 +34,7 @@ def private(*values):
     return controlPrivacy
 
 
-@private("ui")
+@private("ui", "labelTxt")
 class QMyWidget(QtWidgets.QMainWindow):
     def __init__(self, parent=None):
         super().__init__(parent)
@@ -43,11 +43,11 @@ class QMyWidget(QtWidgets.QMainWindow):
         self.labelTxt = "<html><head/><body><p align=\"center\"><span style=\" color:#ff0000;\">欢迎光临！</span></p></body></html>"
     
     def on_reader_pressed(self):
-        print(self.ui.label.text())
-        print(self.ui.label.text() == self.labelTxt)
+        #print(self.ui.label.text())
+        #print(self.ui.label.text() == self.labelTxt)
         if self.ui.label.text() == self.labelTxt:
             self.ui.reader.setText("请出站刷卡")
-            self.ui.label.setText("<html><head/><body><p align=\"center\"><span style=\" color:#ff0000;\">欢迎下次光临！</span></p></body></html>")
+            self.ui.label.setText(self.labelTxt.replace("欢迎光临！", "欢迎下次光临！"))
         else:
             self.ui.label.setText(self.labelTxt)
             self.ui.reader.setText("请进站刷卡")     
