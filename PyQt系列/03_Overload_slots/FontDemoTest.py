@@ -1,13 +1,15 @@
 # -*- coding: utf-8 -*-
 """
-Created on Sun Jan 16 22:29:17 2022
+Created on Sat Jan 22 11:23:58 2022
 
 @author: TR
 """
 
 import sys
-from ReaderPage import *
+from FontDemo import *
 from PyQt5.QtWidgets import QApplication, QMainWindow
+from PyQt5.QtGui import QPalette
+from PyQt5.QtCore import Qt, pyqtSlot
 
 def private(*values):
     # python的严格封装方式，程序来自Mark Lutz。
@@ -34,23 +36,45 @@ def private(*values):
     return controlPrivacy
 
 
-@private("ui", "labelTxt")
+@private("ui")
 class QMyWidget(QMainWindow):
     def __init__(self, parent=None):
         super().__init__(parent)
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
-        self.labelTxt = "<html><head/><body><p align=\"center\"><span style=\" color:#ff0000;\">欢迎光临！</span></p></body></html>"
-    
-    def on_reader_pressed(self):
-        #print(self.ui.label.text())
-        #print(self.ui.label.text() == self.labelTxt)
-        if self.ui.label.text() == self.labelTxt:
-            self.ui.reader.setText("请出站刷卡")
-            self.ui.label.setText(self.labelTxt.replace("欢迎光临！", "欢迎下次光临！"))
+        
+        # 关联单选按钮
+        self.ui.black.clicked.connect(self.setTextColor)
+        self.ui.blue.clicked.connect(self.setTextColor)
+        self.ui.red.clicked.connect(self.setTextColor)
+        
+    @pyqtSlot(bool)
+    def on_bold_clicked(self, checked):
+        font = self.ui.textEdit.font()
+        font.setBold(checked)
+        self.ui.textEdit.setFont(font)
+        
+    @pyqtSlot(bool)
+    def on_italic_clicked(self, checked):
+        font = self.ui.textEdit.font()
+        font.setItalic(checked)
+        self.ui.textEdit.setFont(font)
+        
+    @pyqtSlot(bool)
+    def on_underline_clicked(self, checked):
+        font = self.ui.textEdit.font()
+        font.setUnderline(checked)
+        self.ui.textEdit.setFont(font)
+        
+    def setTextColor(self):
+        palette = self.ui.textEdit.palette()
+        if self.ui.blue.isChecked():
+            palette.setColor(QPalette.Text, Qt.blue)
+        elif self.ui.red.isChecked():
+            palette.setColor(QPalette.Text, Qt.red)
         else:
-            self.ui.label.setText(self.labelTxt)
-            self.ui.reader.setText("请进站刷卡")     
+            palette.setColor(QPalette.Text, Qt.black)
+        self.ui.textEdit.setPalette(palette)
             
 
     
