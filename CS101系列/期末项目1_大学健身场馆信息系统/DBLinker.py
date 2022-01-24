@@ -104,6 +104,7 @@ if __name__ == "__main__":
     deleter = Deleter("customer", "customer_name='Relic'")
     deleter.writeDeletion()
 
+    
     adder = RowAdder("gym_hall", "hall_name", "'葛和凯楼'")
     adder.writeInsertion()
     adder = RowAdder("gym_hall", "hall_name", "'陈天龙美术馆'")
