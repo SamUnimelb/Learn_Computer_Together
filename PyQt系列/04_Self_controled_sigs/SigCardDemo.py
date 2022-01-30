@@ -63,6 +63,7 @@ if __name__ == "__main__": # 界面代码
     up.fansChanged.connect(bk.printFansNum)
     for i in range(5):
         up.follow()
+    # up.fansChanged.disconnect(bk.printFansNum)
     up.unFollow()
     
     
