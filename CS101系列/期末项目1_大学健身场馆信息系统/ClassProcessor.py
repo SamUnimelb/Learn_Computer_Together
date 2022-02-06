@@ -12,36 +12,31 @@ class GymHall:
     def __init__(self):
         self.mgr = ClassManager(("gym_hall", "场馆"), {"hall_name":"场馆名称"},
                                 {}, "以下为查到的场馆信息：")
-        self.mgr.manageOperations()
 
 class Customer:
     def __init__(self):
         self.mgr = ClassManager(("customer", "客户"), {"customer_name":"客户姓名"},
                 {"address":"客户地址", "phone":"客户手机号", "email":"客户邮箱"}, 
                 "以下为查到的客户信息：")
-        self.mgr.manageOperations()
 
 class Equipment:
     def __init__(self):
         self.mgr = ClassManager(("equipment", "器材"), {"equip_seq_num":"器材序列号或名称"},
                 {"hall_name":"所在场馆", "equipment_description":"器材描述"}, 
                 "以下为查到的客户信息：")
-        self.mgr.manageOperations()
         
 class Trainer:
     def __init__(self):
         self.mgr = ClassManager(("trainer", "教练"), {"trainer_name":"教练姓名"},
                 {"hall_name":"所在场馆"}, 
                 "以下为查到的教练信息：")
-        self.mgr.manageOperations()
-        
+
 class OpenHRs:
     def __init__(self):
         self.mgr = ClassManager(("openhrs", "场馆开放时间"), 
                 {"hall_name":"场馆名称", "weekday":"周几（整数数值）开放"},
                 {"startTime":"开始开放时间", "endTime":"结束开放时间"}, 
                 "以下为查到的场馆开放信息：")
-        self.mgr.manageOperations()
 
 class ExercisePlans:
     def __init__(self):
@@ -49,7 +44,6 @@ class ExercisePlans:
                 {"idexercise_plan":"计划书号"},
                 {"trainer_name":"教练姓名", "plandetails":"训练细节"}, 
                 "以下为查到的训练计划书信息：")
-        self.mgr.manageOperations()
         print()
         self.assigns = Assign()
         # 不要执行下一行，否则器材使用计划会跳出来两遍：
@@ -62,7 +56,6 @@ class Assign:
                  "equip_seq_num":"本次训练中该器材的顺序号"},
                 {"duration":"预计器材持续使用时间"}, 
                 "以下为查到的训练过程器材使用计划信息：")
-        self.mgr.manageOperations()
 
 class Subscribe:
     def __init__(self):
@@ -71,7 +64,6 @@ class Subscribe:
                      "meetingTime":"会面时间（格式：YYYY-MM-DD HH:MM:SS）"}, 
                     {"trainer_name":"教练姓名"},
                     "以下为查询到的客户教练分配情况：")
-        self.mgr.manageOperations()
 
 class Follow:
     def __init__(self):
@@ -79,7 +71,6 @@ class Follow:
             {"customer_name":"客户姓名", "exercise_plan":"计划书号"},
             {"startTime":"计划开始时间", "finishTime":"计划结束时间"}, 
              "以下为查到的客户拟执行训练计划书情况：")
-        self.mgr.manageOperations()
 
 if __name__ == "__main__":
     funcDict = {1:GymHall, 2:Customer, 3:Equipment, 4:Trainer,

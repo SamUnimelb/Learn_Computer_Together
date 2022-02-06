@@ -20,11 +20,10 @@ def checkTimeLogic(startTime, finishTime):
     if startTimeNums == finishTimeNums: return False
     
     for i, j in zip(startTimeNums, finishTimeNums):
-        if i > j: return False
+        if i > j: return False # Start time later than finish time
     
     return True
     
-
 def checkTable(tableName, pkDict={}, colNames=[], retHeader="", varNames=[]):
     """需要传入：tableName - 数据表名称，pkDict - 主键值对，
     colNames - 要选择以及呈现的几列，retHeader - 输出结果说明信息头（行）,
@@ -149,6 +148,7 @@ class ClassManager:
         self.tableName = tableName
         self.pkColNames, self.otherColNames = pkColNames, otherColNames
         self.tableHeader = tableHeader
+        self.manageOperations()
         
     def formPkDict(self, update=False):
         pkDict = {}
@@ -203,6 +203,7 @@ class ClassManager:
 
 if __name__ == "__main__":
     """
+    print(checkTimeLogic("14:55", "15:55")) # Return True
     print(checkTimeLogic("2021-12-19 14:55:00", "2021-12-19 15:55:00")) # Return True
     print(checkTimeLogic("2021-12-19 15:55:00", "2021-12-19 14:55:00")) # Return False
     print(checkTimeLogic("2021-12-18 14:55:00", "2021-12-19 15:55:00")) # Return True
