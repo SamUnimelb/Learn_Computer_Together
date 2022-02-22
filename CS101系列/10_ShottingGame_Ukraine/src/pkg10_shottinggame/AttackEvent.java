@@ -38,16 +38,24 @@ public class AttackEvent {
         
         int harmValue = 0;
         switch (equip){
+            case "talk":
+                harmValue = -10;
+                break;
+                
             case "AK47":
                 harmValue = 100;
                 break;
+            
+            case "sign for land":
+                harmValue = 250;
+                break;
                 
-            case "grenade":
-                harmValue = 200;
+            case "grenade cannon":
+                harmValue = 300;
                 break;
             
-            case "knife":
-                harmValue = 30;
+            case "missle":
+                harmValue = 400;
                 break;
                 
             default:

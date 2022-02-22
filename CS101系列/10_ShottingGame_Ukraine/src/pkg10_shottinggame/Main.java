@@ -18,15 +18,16 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-       Player profWang = new Player("R Wang", 
-               new String[]{"AK47", "knife", "grenade"});
-       Player samYan = new Player("S Yan", 
-               new String[]{"AK47", "knife", "nuclic bomb"});
+       Player ukraine = new Player("Ukraine", 
+               new String[]{"talk", "AK47", "grenade cannon", "nulic bomb"});
+       Player russia = new Player("Russia", 
+               new String[]{"talk", "AK47", "grenade cannon", "nulic bomb",
+               "sign for land"});
        
-       Player[] players = {profWang, samYan};
+       Player[] players = {ukraine, russia};
        
-       profWang.startGame(1200);
-       samYan.startGame(1000);
+       ukraine.startGame(1400);
+       russia.startGame(2000);
        
        runGame(players);
            
@@ -39,14 +40,22 @@ public class Main {
             System.out.println("Player: " + players[playerSeq].userName 
                     + "'s turn: ");
             input = new Scanner(System.in);
-            System.out.println("Input the person you want to attack: ");
+            System.out.println("Input the country you want to attack: ");
             String person = input.nextLine();
             System.out.println("Input the equipment you want to use: ");
             String equip = input.nextLine();
             Player p = whoGotAttacked(players, person);
             if(p != null){
                 AttackEvent evt = players[playerSeq].attack(p, equip);
+                
                 p.blood -= evt.bloodDeducted();
+                
+                if(equip.equals("talk"))
+                    players[playerSeq].blood += evt.bloodDeducted();
+                else if(equip.equals("sign for land")){
+                    players[playerSeq].blood += evt.bloodDeducted();
+                }
+                
                 System.out.println(evt);
                 
                 if(p.isCool()){
@@ -71,8 +80,11 @@ public class Main {
 
     public static void congratulateMessage(Player[] players){
         for(Player p : players)
-            if(!p.isCool())
+            if(!p.isCool()){
                 System.out.println("恭喜" + p.userName + ", 你赢了！");
+                System.out.println("残血为：" + p.blood);
+            }
+                
     }
     
 }
