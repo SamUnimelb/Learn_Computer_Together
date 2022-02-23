@@ -9,13 +9,11 @@ package pkg11_gottenbankproject;
  *
  * @author TR
  */
-public class Main {
+public class HackerMain {
+        public static void main(String[] args) {
+        BankAccount myAccount = new BankAccount("5247123434566789", 10000);       
+        BankAccount hackerAccount = new BankAccount("5247123456786789", 0);
+        
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
     }
-    
 }
