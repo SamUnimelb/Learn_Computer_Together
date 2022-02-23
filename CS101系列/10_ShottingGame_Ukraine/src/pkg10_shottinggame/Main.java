@@ -22,7 +22,7 @@ public class Main {
                new String[]{"talk", "AK47", "grenade cannon", "nulic bomb"});
        Player russia = new Player("Russia", 
                new String[]{"talk", "AK47", "grenade cannon", "nulic bomb",
-               "sign for land"});
+               "sign for land", "missle"});
        
        Player[] players = {ukraine, russia};
        
@@ -82,7 +82,7 @@ public class Main {
         for(Player p : players)
             if(!p.isCool()){
                 System.out.println("恭喜" + p.userName + ", 你赢了！");
-                System.out.println("残血为：" + p.blood);
+                System.out.println("残血为：" + p.blood);//评估战损
             }
                 
     }

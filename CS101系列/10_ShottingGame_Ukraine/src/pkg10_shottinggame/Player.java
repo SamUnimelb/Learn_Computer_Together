@@ -17,9 +17,10 @@ public class Player {
     }
     
     public AttackEvent attack(Player to, String equip){
-        boolean attackedSuccessfully = (int)(Math.random() * 10) >= 3;
+        //加入扣血指数，范围从伤害值的0.2-1.7（不含），增加了很大不确定性
+        double attackedHarmRate = Math.random() * 1.5 + 0.2;
         //In python: return (self, to, equip, attackedSuccessfully)
-        return new AttackEvent(this, to, equip, attackedSuccessfully);
+        return new AttackEvent(this, to, equip, attackedHarmRate);
     }
     
     public static boolean onlyPlayer(){

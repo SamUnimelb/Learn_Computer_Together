@@ -13,15 +13,15 @@ public class AttackEvent {
     
     private Player fromPlayer, toPlayer;
     private String equip;
-    private boolean attackSuccessfully;
+    private double attackedHarmRate;
     private int bloodDeducted;
     
     public AttackEvent(Player fromPlayer, Player toPlayer, String equip,
-            boolean attackSuccessfully){
+            double attackedHarmRate){
         this.fromPlayer = fromPlayer;
         this.toPlayer = toPlayer;
         this.equip = equip;
-        this.attackSuccessfully = attackSuccessfully;
+        this.attackedHarmRate = attackedHarmRate;
         bloodDeducted = bloodDeducted();
     }
     
@@ -33,8 +33,6 @@ public class AttackEvent {
     }
     
     public int bloodDeducted() {
-        if(!attackSuccessfully)
-            return 0;
         
         int harmValue = 0;
         switch (equip){
@@ -63,7 +61,7 @@ public class AttackEvent {
                 break;
         }
         
-        return harmValue;
+        return (int)(harmValue * attackedHarmRate);
     }
     
 }
