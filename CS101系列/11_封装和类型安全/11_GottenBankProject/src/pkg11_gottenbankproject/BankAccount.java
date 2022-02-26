@@ -13,6 +13,10 @@ public class BankAccount {
         this.amount = amount;
     }
     
+    public String getAccountID(){
+        return accountID;
+    }
+    
     public double getAmount(){
         return amount;
     }

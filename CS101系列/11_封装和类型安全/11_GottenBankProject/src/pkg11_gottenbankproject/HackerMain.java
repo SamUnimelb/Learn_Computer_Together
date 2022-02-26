@@ -11,9 +11,12 @@ package pkg11_gottenbankproject;
  */
 public class HackerMain {
     public static void main(String[] args) {
-        BankAccount myAccount = new BankAccount("5247123434566789", 10000);       
-        BankAccount hackerAccount = new BankAccount("5247123456786789", 0);
-        
+        BankAccount account1 = new BankAccount("5247123434566789", 10000);
+        Person samY = new Person("Sam Yan", account1);
+        Person hacker = new Person("Hacker", account1);
+        hacker.getAccount().takeMoney(500);
+        System.out.println("Remained amount in Sam: " + samY.getAccount().getAmount());
+               
 
     }
 }
