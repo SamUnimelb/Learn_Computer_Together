@@ -16,8 +16,9 @@ public class SimulatedRPG {
      */
     public static void main(String[] args) {
         Character xiaoyaoLi = new XianjianCharacter("李逍遥", 'M', 34);
-        System.out.println("游戏人物名称：" + xiaoyaoLi.getName() + 
-                "，所属剧情：" + xiaoyaoLi.getGanster());
+        //System.out.println("游戏人物名称：" + xiaoyaoLi.getName() + 
+        //        "，所属剧情：" + xiaoyaoLi.getGanster());
+        System.out.println(xiaoyaoLi);
         
        Character qingming = new Onmyoji("晴明", 'M', 32);
         System.out.println("游戏人物名称：" + qingming.getName() + 
