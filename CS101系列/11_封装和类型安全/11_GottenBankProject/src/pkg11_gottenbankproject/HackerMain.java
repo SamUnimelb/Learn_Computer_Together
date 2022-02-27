@@ -14,7 +14,8 @@ public class HackerMain {
         BankAccount account1 = new BankAccount("5247123434566789", 10000);
         Person samY = new Person("Sam Yan", account1);
         Person hacker = new Person("Hacker", account1);
-        hacker.getAccount().takeMoney(500);
+        for(int i = 0; i < 10; i++)
+            hacker.getAccount().takeMoney(500);
         System.out.println("Remained amount in Sam: " + samY.getAccount().getAmount());
                
 
