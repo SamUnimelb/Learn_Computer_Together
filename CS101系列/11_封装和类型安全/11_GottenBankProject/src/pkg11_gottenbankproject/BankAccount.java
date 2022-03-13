@@ -5,7 +5,7 @@ package pkg11_gottenbankproject;
  * @author TR
  */
 public class BankAccount {
-    private String accountID;
+    private final String accountID;
     private double amount;
     private Logger logger;
     
