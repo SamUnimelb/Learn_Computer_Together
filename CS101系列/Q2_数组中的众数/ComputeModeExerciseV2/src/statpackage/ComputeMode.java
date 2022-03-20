@@ -2,7 +2,7 @@ package statpackage;
 
 /**
  *
- * @author TR
+ * @author Sam Y
  */
 
 public class ComputeMode {
