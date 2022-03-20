@@ -4,6 +4,7 @@ package statpackage;
  *
  * @author TR
  */
+
 public class ComputeMode {
 
     private class NumFreqMap{
@@ -55,7 +56,7 @@ public class ComputeMode {
         funC.initializeMap(numMap);
           
         for(int i = 0; i < mapLength; i++){
-            int loc = nums[i] % mapLength;
+            int loc = Math.abs(nums[i]) % mapLength;
             if(!numMap[loc].initialized)
                 intializeMapEle(numMap[loc], nums[i], i);
             else if(numMap[loc].num == nums[i] && numMap[loc].initialized)

@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package computemodegeneral;
 
 /**
@@ -51,7 +46,15 @@ public class ComputeMode {
                 suspectedModes[suspectedIdx] = i;
             }
         }
-        
+
+        /*for (int i = 0; i < numFreqMap.length; i++) {
+            if (numFreqMap[i] != 0) {
+                for(int j = 0; j < numFreqMap[i]; j++)
+                    System.out.print(i + " ");
+            }
+        }
+        System.out.println("");*/
+
         if(suspectedIdx == 0)
             return suspectedModes[0];
         
@@ -61,6 +64,8 @@ public class ComputeMode {
                     return nums[i];
             }
         }
+        
+
 
         return modeNum;
     }

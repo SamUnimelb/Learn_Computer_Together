@@ -21,6 +21,7 @@ public class ComputeModeGeneral {
         System.out.println(ComputeMode.mode(new int[]{6, 3, 6, 6, 5, 9, 5}));
         System.out.println(ComputeMode.mode(new int[]{1, 1, 2, 3, 3, 9, 5}));
         System.out.println(ComputeMode.mode(new int[]{5, 4, 4, 3, 2, 2, 1}));
+        System.out.println(ComputeMode.mode(new int[]{5, -4, -4, 3, 2, 2, 1}));
     }
 
 }
