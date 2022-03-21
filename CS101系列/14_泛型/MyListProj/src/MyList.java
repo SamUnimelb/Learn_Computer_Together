@@ -12,11 +12,11 @@ public class MyList<T extends Comparable<T>> {
 
         private final Type value;
 
-        public MyListElement(Type value) {
+        MyListElement(Type value) {
             this.value = value;
         }
 
-        public Type getValue() {
+        Type getValue() {
             return this.value;
         }
 
