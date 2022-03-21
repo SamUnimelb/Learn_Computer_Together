@@ -3,9 +3,40 @@
  * @param <T>
  */
 
-public class MyList <T extends Comparable<T>>{
+public class MyList<T extends Comparable<T>> {
+
     private final MyListElement<T>[] data;
-    
+
+    private class MyListElement<Type extends Comparable<Type>>
+            implements Comparable<MyListElement<Type>> {
+
+        private final Type value;
+
+        public MyListElement(Type value) {
+            this.value = value;
+        }
+
+        public Type getValue() {
+            return this.value;
+        }
+
+        @Override
+        public String toString() {
+            return this.value + "";
+        }
+
+        @Override
+        public int compareTo(MyListElement<Type> other) {
+            if (this.value.compareTo(other.getValue()) == 0) {
+                return 0;
+            } else if (this.value.compareTo(other.getValue()) > 0) {
+                return 1;
+            }
+            return -1;
+        }
+
+    }
+
     public MyList(T[] arr){
         data = new MyListElement[arr.length];
         for(int i = 0; i < arr.length; i++)
