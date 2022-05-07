@@ -51,11 +51,13 @@ public class ComputeMode {
             return -1;
         
         ComputeMode funC = new ComputeMode();
-        int mapLength = nums.length;
+        
+        //It is suggested when 3 / 4 of the map was used it is most efficient. 
+        int mapLength = (int)(nums.length * 4 / 3);
         NumFreqMap[] numMap = new NumFreqMap[mapLength];
         funC.initializeMap(numMap);
           
-        for(int i = 0; i < mapLength; i++){
+        for(int i = 0; i < nums.length; i++){
             int loc = Math.abs(nums[i]) % mapLength;
             if(!numMap[loc].initialized)
                 intializeMapEle(numMap[loc], nums[i], i);
