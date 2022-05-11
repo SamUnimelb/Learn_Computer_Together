@@ -1,0 +1,3 @@
+.ORIG x3000
+LD R2, 4
+.END

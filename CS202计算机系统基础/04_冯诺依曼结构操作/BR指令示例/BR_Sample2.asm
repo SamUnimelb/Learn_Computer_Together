@@ -1,0 +1,7 @@
+.ORIG x3000
+ADD R2, R1, -8
+BRn 2
+ADD R2, R2, 2
+ADD R2, R2, 3
+ADD R2, R2, 6
+.END

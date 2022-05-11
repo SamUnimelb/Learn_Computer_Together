@@ -1,0 +1,5 @@
+.ORIG x3000
+TRAP x20
+TRAP x21
+BRp -3
+.END
