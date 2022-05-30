@@ -11,4 +11,9 @@ void main(){
     printf("The big integer is: %d\n", bigInt2);
     bigInt2++;
     printf("The big integer is: %d\n", bigInt2);
+
+    int bigInt3 = -pow(2, 31);
+    printf("The big integer is: %d\n", bigInt3);
+    bigInt3--;
+    printf("The big integer is: %d\n", bigInt3);
 }
