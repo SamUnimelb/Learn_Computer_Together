@@ -1,0 +1,4 @@
+.ORIG x3000
+ST R2 0
+HALT
+.END
