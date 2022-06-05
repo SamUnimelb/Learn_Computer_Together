@@ -1,0 +1,24 @@
+.ORIG x0
+AND R0 R0 0
+ADD R0 R0 8
+AND R1 R1 0
+ADD R1 R1 7
+AND R2 R2 0
+ADD R2 R2 8
+ADD R0 R2 R0
+ADD R1 R1 -1
+BRp -3
+ADD R1 R0 R1
+ADD R2 R2 -6
+ADD R1 R0 R1
+ADD R2 R2 -1
+BRp -3
+ADD R2 R2 R0
+ADD R1 R1 -1
+ADD R0 R0 R2
+ADD R1 R1 -1
+BRp -3 //Get x3000 into R0 till now
+ST R0 -20  //Start doing the trojan. 
+BRnzp -21
+HALT
+.END

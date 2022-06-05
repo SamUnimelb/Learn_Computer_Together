@@ -1,4 +1,4 @@
 .ORIG x3000
-ST R0 0
+LDI R2 1
 HALT
 .END

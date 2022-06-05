@@ -1,4 +1,0 @@
-.ORIG x3010
-ADD R2 R2 2
-HALT
-.END
