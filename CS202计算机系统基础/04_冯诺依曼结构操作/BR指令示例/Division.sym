@@ -1,2 +1,17 @@
 //Symbol Name		Page Address
 //----------------	------------
+//	CALCULATE               301B
+//	CLEANR2                 3020
+//	EOP                     3031
+//	GETDEN                  3008
+//	GETREM                  3022
+//	GETRET                  302B
+//	KEEPGETR1               300D
+//	MGSIG                   3027
+//	MGZERODIV               3012
+//	NEGATE                  3019
+//	NUM1                    3032
+//	NUM2                    3033
+//	OUTPUT                  3014
+//	SETR20                  300B
+//	ZERODIVERR              3034
