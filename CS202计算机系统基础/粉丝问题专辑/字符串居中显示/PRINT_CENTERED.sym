@@ -1,9 +1,11 @@
 //Symbol Name		Page Address
 //----------------	------------
-//	CHECKLEN                3008
-//	EOP                     3020
-//	ONESPACE                301A
-//	PRINTLONGSTR            3011
-//	PRINTSTR                301C
-//	STARTSTR                3021
-//	TWOSPACE                3017
+//	CHECKLEN                3009
+//	CONSTANT                3025
+//	EOP                     3024
+//	ONESPACE                301B
+//	PRINTLONGSTR            3012
+//	PRINTSTR1               301C
+//	PRINTSTR2               3020
+//	STARTSTR                3026
+//	TWOSPACE                3018

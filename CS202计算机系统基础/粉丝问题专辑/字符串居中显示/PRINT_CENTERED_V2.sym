@@ -1,0 +1,19 @@
+//Symbol Name		Page Address
+//----------------	------------
+//	COUNTSTRLEN             300B
+//	ENDSPACECT              305C
+//	FINISH                  3058
+//	FIRSTFIVE               3026
+//	FIRSTSIX                301B
+//	OUTREST3                304D
+//	OUTREST4                3036
+//	OUTREST5                3027
+//	OUTREST6                301C
+//	PRLE3                   3042
+//	PRT4                    3033
+//	R0ORIGVAL               305B
+//	REMSPACE                3055
+//	SCREENLEN               305F
+//	SPACEASCII              305E
+//	STARTSTR                3060
+//	STRLEN                  305D
