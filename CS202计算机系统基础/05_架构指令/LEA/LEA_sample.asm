@@ -1,3 +1,4 @@
 .ORIG x3000
 LEA R2 1
+LDR R1 R2 1
 .END
