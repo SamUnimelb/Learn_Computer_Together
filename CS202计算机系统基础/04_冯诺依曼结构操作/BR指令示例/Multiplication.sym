@@ -1,8 +1,8 @@
 //Symbol Name		Page Address
 //----------------	------------
 //	CALCULATE               300E
-//	CLEANUP                 3016
-//	EOP                     3019
+//	CLEANUP                 3015
+//	EOP                     3018
 //	GETR2                   3008
-//	NUM1                    301A
-//	NUM2                    301B
+//	NUM1                    3019
+//	NUM2                    301A
