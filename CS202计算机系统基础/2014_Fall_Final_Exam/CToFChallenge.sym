@@ -1,17 +1,13 @@
 //Symbol Name		Page Address
 //----------------	------------
-//	CALCULATE               300E
-//	CALCULATEDIV            3023
-//	CLEANUP                 3015
-//	CONST                   3037
-//	EOP                     302C
-//	GETR2                   300C
-//	GETRET                  3028
-//	NUM1                    3034
-//	NUM2                    3035
-//	NUM3                    3036
-//	ONGO                    301F
-//	R1VAL                   3038
-//	R2VAL                   3039
-//	R3VAL                   303A
-//	R4VAL                   303B
+//	CALCULATE               300A
+//	CALCULATEDIV            301F
+//	CLEANUP                 3011
+//	CONST                   302F
+//	EOP                     3028
+//	GETR2                   3008
+//	GETRET                  3024
+//	NUM1                    302C
+//	NUM2                    302D
+//	NUM3                    302E
+//	ONGO                    301B

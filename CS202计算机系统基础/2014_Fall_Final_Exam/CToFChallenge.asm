@@ -10,10 +10,6 @@
 //num1 and num2 can be any integers ranging between -273 ~ 3640
 
 .ORIG x3000
-ST R1 R1VAL
-ST R2 R2VAL
-ST R3 R3VAL
-ST R4 R4VAL
 AND R3 R3 0 ;R3 to store results of the calculation.
 AND R4 R4 0 ;R4 to calculate number of neg factors.
 LD R1 NUM1
@@ -68,18 +64,10 @@ GETRET ADD R4 R4 -1
 EOP	LD R2 CONST
 	ADD R3 R2 R3
 	ADD R0 R3 0
-	LD R1 R1VAL
-	LD R2 R2VAL
-	LD R3 R3VAL
-	LD R4 R4VAL
 	HALT	; End of program.
 
 NUM1 .BLKW 1
 NUM2 .FILL 9
 NUM3 .FILL 5
 CONST .FILL 32
-R1VAL .BLKW 1
-R2VAL .BLKW 1
-R3VAL .BLKW 1
-R4VAL .BLKW 1
 .END
