@@ -1,6 +1,6 @@
 //This program is able to perform division
 //of any 2 given integers whose absolute value
-//ranges from x0 ~ xFFFF.
+//ranges from x0 ~ x7FFF.
 
 //The program gets result in R3, reminder in R2.
 //The signal of the reminder depends on the nominator.
