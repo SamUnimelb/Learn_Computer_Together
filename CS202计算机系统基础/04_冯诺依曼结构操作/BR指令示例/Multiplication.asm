@@ -1,5 +1,5 @@
 //Calculate num1 * num2 and store the result to R3
-//num1 and num2 can be any integers ranging between xFFFD ~ xFD
+//num1 and num2 can be any integers ranging between xFF01 ~ x00FD
 //e.g. num1 = 4, num2 = 5, num1 * num2 = 20;
 //e.g. num1 = -4, num2 5, num1 * num2 = -20;
 //e.g. num1 = 4, num2 = -5, num1 * num2 = -20;
