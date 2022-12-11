@@ -1,4 +1,3 @@
 .ORIG x3000
-LD R2 5
-HALT
+JSR 5
 .END
