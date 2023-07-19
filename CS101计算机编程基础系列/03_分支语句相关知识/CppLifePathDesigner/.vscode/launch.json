@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "e:/Git_Projects/Learn_Computer_Together/CS101计算机编程基础系列/02_变量标识符表达式/Cpp",
-      "program": "e:/Git_Projects/Learn_Computer_Together/CS101计算机编程基础系列/02_变量标识符表达式/Cpp/build/Debug/outDebug",
+      "cwd": "e:/Git_Projects/Learn_Computer_Together/CS101计算机编程基础系列/03_分支语句相关知识/CppLifePathDesigner",
+      "program": "e:/Git_Projects/Learn_Computer_Together/CS101计算机编程基础系列/03_分支语句相关知识/CppLifePathDesigner/MarkAnalyser.exe",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
