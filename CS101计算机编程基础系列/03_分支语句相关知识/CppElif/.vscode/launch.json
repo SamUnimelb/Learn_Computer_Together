@@ -9,7 +9,7 @@
       "stopAtEntry": false,
       "externalConsole": true,
       "cwd": "e:/Git_Projects/Learn_Computer_Together/CS101计算机编程基础系列/03_分支语句相关知识/CppElif",
-      "program": "e:/Git_Projects/Learn_Computer_Together/CS101计算机编程基础系列/03_分支语句相关知识/CppElif/DemoElif",
+      "program": "e:/Git_Projects/Learn_Computer_Together/CS101计算机编程基础系列/03_分支语句相关知识/CppElif/DemoElif.exe",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
