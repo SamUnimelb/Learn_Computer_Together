@@ -9,7 +9,7 @@
       "stopAtEntry": false,
       "externalConsole": true,
       "cwd": "e:/Git_Projects/Learn_Computer_Together/CS101计算机编程基础系列/03_分支语句相关知识/CppSwitch",
-      "program": "e:/Git_Projects/Learn_Computer_Together/CS101计算机编程基础系列/03_分支语句相关知识/CppSwitch/CppSwitchDemo.exe",
+      "program": "e:/Git_Projects/Learn_Computer_Together/CS101计算机编程基础系列/03_分支语句相关知识/CppSwitch/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
