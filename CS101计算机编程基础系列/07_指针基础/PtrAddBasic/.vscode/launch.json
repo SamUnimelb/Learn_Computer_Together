@@ -7,13 +7,11 @@
       "request": "launch",
       "args": [],
       "stopAtEntry": false,
-      "cwd": "h:\\Git\\Code_devs\\Learn_Computer_Together\\CS101系列\\07_指针基础",
-      "environment": [],
-      "program": "h:\\Git\\Code_devs\\Learn_Computer_Together\\CS101系列\\07_指针基础\\build\\Debug\\outDebug",
-      "internalConsoleOptions": "openOnSessionStart",
+      "externalConsole": true,
+      "cwd": "e:/Git_Projects/Learn_Computer_Together/CS101计算机编程基础系列/07_指针基础/PtrAddBasic",
+      "program": "e:/Git_Projects/Learn_Computer_Together/CS101计算机编程基础系列/07_指针基础/PtrAddBasic/PtrTest.exe",
       "MIMode": "gdb",
-      "miDebuggerPath": "C:\\Develop_Tools\\mingw64\\mingw64\\bin\\gdb.exe",
-      "externalConsole": false,
+      "miDebuggerPath": "gdb",
       "setupCommands": [
         {
           "description": "Enable pretty-printing for gdb",
