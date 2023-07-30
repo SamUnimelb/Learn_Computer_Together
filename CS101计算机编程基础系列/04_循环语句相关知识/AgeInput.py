@@ -12,6 +12,6 @@ while not isSatisfiedInput:
         age = int(input("请亲告诉我一下年龄："))
         isSatisfiedInput = True
     except ValueError:
-        print("请亲确定输入十个代表年龄的整数哟！")
+        print("请亲确定输入是个代表年龄的整数哟！")
     
 print("输入的年龄为：{:3d}".format(age))
