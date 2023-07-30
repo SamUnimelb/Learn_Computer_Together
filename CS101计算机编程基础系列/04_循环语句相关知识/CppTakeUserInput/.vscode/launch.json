@@ -1,0 +1,24 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "externalConsole": true,
+      "cwd": "e:/Git_Projects/Learn_Computer_Together/CS101计算机编程基础系列/04_循环语句相关知识/CppTakeUserInput",
+      "program": "e:/Git_Projects/Learn_Computer_Together/CS101计算机编程基础系列/04_循环语句相关知识/CppTakeUserInput/TakePriceInput.exe",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ]
+}
