@@ -15,32 +15,8 @@ bool isFloat(string myString){
     return iss.eof() && !iss.fail(); 
 }
 
-bool isPriceNum(string priceStr){
-    int len = priceStr.length();
-    int dotPoint = 0;
-
-    for(int i = 0; i < len; i++){
-        if(priceStr.at(i) == '.')
-            dotPoint = i;
-    }
-
-    return len - 1 - dotPoint <= 2;
-    
-}
-
 int main(){
-    //Test codes:
-
-    /*printf("%d\n", isFloat("3.142"));
-    printf("%d\n", isFloat("3.14.2"));
-    printf("%d\n", isFloat("3.jbk")); 
-    printf("%d\n", isFloat("3"));*/
-
-    /*printf("%d\n", isPriceNum(3.142));
-    printf("%d\n", isPriceNum(3.14));
-    printf("%d\n", isPriceNum(3.1));
-    printf("%d\n", isPriceNum(3.148));*/
-    
+ 
     string priceStr;
     double price = 0.0;
     bool isSatisfiedInput = false;
@@ -52,11 +28,12 @@ int main(){
             //cout << "In main: " << isFloat(priceStr) << endl;
             
             if(isFloat(priceStr)){
-                
-                if(!isPriceNum(priceStr))
-                   throw(price);
-                
                 price = stof(priceStr);
+                double checkedPrice = int(price * 100) / 100.0;
+
+                if(price != checkedPrice)
+                    throw(price);
+                
                 isSatisfiedInput = true;
 
             }else{
@@ -69,7 +46,7 @@ int main(){
                 //要么抛出时将类型转化为string。
                 throw(string("请亲确定输入的是个数哦！"))*/;
 
-                throw("请亲确定输入的是个数哦！");
+                throw("请亲确定输入的是个浮点数哦！");
             }
         }/*catch(string typeErr){
             cout << typeErr << endl;
