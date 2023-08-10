@@ -15,7 +15,7 @@ void printLst(T lst[], int size){
 }*/
 
 template<class T>
-void printLst(T * lst, int size){
+void printLst(const T * lst, const int size){
     cout << "{";
     for(int i = 0; i < size - 1; i++)
         cout << *(lst + i) << ", ";
