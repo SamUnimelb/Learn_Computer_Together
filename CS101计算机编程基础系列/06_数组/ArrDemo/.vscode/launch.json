@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "e:/Git_Projects/Learn_Computer_Together/CS101计算机编程基础系列/04_循环语句相关知识/CppForLoopDemo",
-      "program": "e:/Git_Projects/Learn_Computer_Together/CS101计算机编程基础系列/04_循环语句相关知识/CppForLoopDemo/ForLoopDemo.exe",
+      "cwd": "e:/Git_Projects/Learn_Computer_Together/CS101计算机编程基础系列/06_数组/ArrDemo",
+      "program": "e:/Git_Projects/Learn_Computer_Together/CS101计算机编程基础系列/06_数组/ArrDemo/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

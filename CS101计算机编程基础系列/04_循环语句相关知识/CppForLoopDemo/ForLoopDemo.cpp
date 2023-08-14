@@ -23,6 +23,15 @@ void printLst(const T * lst, const int size){
     cout << "}" << endl;
 }
 
+template<class T>
+void deleteLst(T * lst, const int size){
+    for(int i = 0; i < size - 1; i++)
+        *(lst + i) = '\0';
+    
+    lst = NULL;
+    delete lst;
+}
+
 int main(){
     string actions[] = {u8"关注", u8"点赞", u8"转发", u8"收藏", u8"订阅"};
     
@@ -42,6 +51,13 @@ int main(){
         actions[i] = u8"白嫖成功！";
     printf("\n");
     printLst(actions, 5);
+
+    deleteLst(actions, 5);
+
+    //Testing code:
+    double myArr[5] = {1.25, 1.5, 1.75, 2, 2.5};
+    printLst(myArr, 5);
+    deleteLst(myArr, 5);
 
     system("pause");
     return 0;

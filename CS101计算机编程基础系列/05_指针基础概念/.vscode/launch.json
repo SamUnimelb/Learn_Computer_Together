@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "e:/Git_Projects/Learn_Computer_Together/CS101计算机编程基础系列/07_指针基础/PtrAddBasic",
-      "program": "e:/Git_Projects/Learn_Computer_Together/CS101计算机编程基础系列/07_指针基础/PtrAddBasic/PtrTest.exe",
+      "cwd": "e:/Git_Projects/Learn_Computer_Together/CS101计算机编程基础系列/05_指针基础概念",
+      "program": "e:/Git_Projects/Learn_Computer_Together/CS101计算机编程基础系列/05_指针基础概念/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
