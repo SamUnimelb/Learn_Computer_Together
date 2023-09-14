@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "e:/Git_Projects/Learn_Computer_Together/CS101计算机编程基础系列/06_数组/CorCpp",
-      "program": "e:/Git_Projects/Learn_Computer_Together/CS101计算机编程基础系列/06_数组/CorCpp/Array.exe",
+      "cwd": "e:/Git_Projects/Learn_Computer_Together/CS101计算机编程基础系列/06_数组/CorCppArrDef",
+      "program": "e:/Git_Projects/Learn_Computer_Together/CS101计算机编程基础系列/06_数组/CorCppArrDef/ArrDef.exe",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

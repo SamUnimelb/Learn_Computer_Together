@@ -76,17 +76,16 @@ int main(){
     for(int i = 1; i <=5; i++)
         *(myArr6 + i - 1) = i * 1.5;
     printArr(myArr6, 5);
-    //freeArr(myArr6, 5);
+    
 
     //第7种定义方式：
     int * myArr7 = (int *)realloc(myArr6, 5 * sizeof(int));
+    //freeArr(myArr6, 5);
+
     for(int i = 1; i <=5; i++)
         *(myArr7 + i - 1) = i * 1000;
     printArr(myArr7, 5);
     freeArr(myArr7, 5);
-
-
-
 
     system("pause");
     return 0;
