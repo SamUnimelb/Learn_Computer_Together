@@ -9,6 +9,15 @@ void printArr(T * arr, int size){
     cout << endl;
 }
 
+template<class T>
+void deleteArr(T * arr, int size){
+    for(int i = 0; i < size; i++)   
+        arr[i] = '\0';
+    
+    arr = NULL;
+    delete arr;
+}
+
 int main(){
     int numArr1[] = {1, 4, 2, 3, 5}; //数组的第一种定义方式。
 
@@ -32,6 +41,11 @@ int main(){
         *(ptr + i) += 2;
 
     printArr(numArr1, 5);
+    deleteArr(numArr1, 5);
+    deleteArr(numArr2, 5);
+
+    ptr = NULL;
+    delete ptr;
 
     system("pause");
     return 0;
