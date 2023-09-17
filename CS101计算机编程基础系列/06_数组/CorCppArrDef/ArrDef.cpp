@@ -84,8 +84,11 @@ int main(){
 
     for(int i = 1; i <=5; i++)
         *(myArr7 + i - 1) = i * 1000;
+
     printArr(myArr7, 5);
     freeArr(myArr7, 5);
+    
+    //printArr(myArr6, 5);
 
     system("pause");
     return 0;
