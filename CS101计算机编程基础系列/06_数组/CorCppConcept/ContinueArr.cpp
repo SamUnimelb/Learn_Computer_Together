@@ -4,6 +4,7 @@ using namespace std;
 
 template<class T>
 void printArr(T * arr, int size){
+    //cout << "[";
     for(int i = 0; i < size; i++)   
         cout << arr[i] << " ";
     cout << endl;

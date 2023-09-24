@@ -9,7 +9,7 @@
       "stopAtEntry": false,
       "externalConsole": true,
       "cwd": "e:/Git_Projects/Learn_Computer_Together/CS101计算机编程基础系列/07_函数/ArrayPrintout",
-      "program": "e:/Git_Projects/Learn_Computer_Together/CS101计算机编程基础系列/07_函数/ArrayPrintout/PrintArr.exe",
+      "program": "e:/Git_Projects/Learn_Computer_Together/CS101计算机编程基础系列/07_函数/ArrayPrintout/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
